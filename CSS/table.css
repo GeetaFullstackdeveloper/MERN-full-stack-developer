@@ -1,0 +1,32 @@
+/* collapse border */
+/* table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  } */
+
+  /* style border */
+  /* table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #96D4D4;
+  } */
+/* round table borders */
+  /* table, th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+  } */
+
+  table{
+    border: 1px solid black;
+    border-radius: 10px;
+    width:100%;
+  }
+
+  th, td {
+    /* border-style: dotted; */
+    border-style: solid;
+    text-align: center;
+  }
+  
