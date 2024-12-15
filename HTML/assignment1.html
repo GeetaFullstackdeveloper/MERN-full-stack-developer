@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table And Form</title>
+    <link rel="stylesheet" href ="D:\FUll STACK\MERN-full-stack-developer\CSS\assignment1.css">
+
+   
+</head>
+
+<body>
+    <form id="userInfoForm" style="display: inline;" >
+        <h5>Form Preview</h5>
+    <div>
+        <!-- <div class="form-container"> -->
+        
+        <p class="justified-text" style="background-color:rgba(71, 172, 255, 0.123);">
+            This is a preview of your content. The excat design dependends on your site settings 
+            and can be changed insite the site editor once you add this form to a site</p><br>
+            <!-- <textarea name="message" style="background-color:rgba(71, 172, 255, 0.123);" class ='justified-text'>
+                This is a preview of your content. The excat design dependends on your site settings 
+            and can be changed insite the site editor once you add this form to a site
+                </textarea> -->
+        </div>  
+        <!-- <div>       -->
+            <table>
+                <tr>
+                   <th><label for="name">First Name </label></th>
+                   <th><label for="name">Last Name </label></th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="name" placeholder="Jane"></td>
+                    <td><input type="text" id="name" placeholder="Doe"></td>
+                </tr>
+            </table><br>
+            <label for="email"><b>Email*</b></label><br>
+            <input type="email" id="email"><br>
+            <table>
+                <tr>
+                   <th><label for="name">How did you hear about us? </label></th>
+                   <th><label for="name">Position</label></th>
+                </tr>
+                <tr>
+                    <td>
+                            <select name="search" id="search">
+                                <option value="LinkedIn">LinkedIn</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Twitter">Twitter</option>
+                            </select>
+                    </td>
+                    <td>
+                        <select name="search" id="search">
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Tester">Tester</option>
+                        </select>
+                   </td>
+                </tr>
+            </table><br>
+            <label for="name"><b>Whould you consider a remote position? </b></label><br>
+            <input type="radio" id="Yes" value="Yes">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" value="No">
+            <label for="No">No</label><br>
+            <label for="name"><b>LinkedIn </b></label><br>
+            <input type="text" id="linkedin" placeholder="https://www.linkedin.com/in/janedoe"><br>
+            <label for="resume">Upload Your Resume</label><br>
+            <button>Choose File</button><br>
+            <!-- </div> -->
+
+
+
+  <button>Submit</button>        
+    </div>
+</form>
+</body>
+</html>

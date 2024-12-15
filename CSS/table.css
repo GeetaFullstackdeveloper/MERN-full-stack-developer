@@ -26,7 +26,7 @@
 
   th, td {
     /* border-style: dotted; */
-    border-style: solid;
+    border-style:double;
     text-align: center;
   }
   

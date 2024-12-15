@@ -1,0 +1,11 @@
+div {
+    color: white;
+    background-color: 009900;
+    margin: 2px;
+    font-size: 10px;
+}
+th, td {
+    text: border-collapse;
+    padding: 8px;
+    text-align: left;
+  }
