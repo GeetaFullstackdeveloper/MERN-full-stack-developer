@@ -1,0 +1,40 @@
+.flex-container {
+    display: flex;
+    align-items: strech;
+    width: 100%;
+    height: auto;
+    background-color: #9da1a3;
+    }
+    .flex-container1 {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        height: auto;
+        background-color: #e0e7ea;
+        }
+    .right {
+    width: 50%;
+    height: auto;
+    margin: 5px;
+    background-color: #4a4d46;
+    }
+    .left {
+        width: 50%;
+        height: auto;
+        margin: 5px;
+        background-color: #edefea;
+        }
+        button {
+        float: right;
+    }
+    #outer
+{
+    width:100%;
+    text-align: left;
+}
+.inner
+{
+    display:flex;
+    flex-direction: row;
+    position :absolute;
+}
