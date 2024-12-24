@@ -29,6 +29,10 @@
         button {
         float: right;
     }
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
     #outer
 {
     width:100%;

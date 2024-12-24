@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Display property</title>
+    <style> 
+
+    .form-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+   }
+
+.form-text {
+    flex: 1;
+}
+
+.form-button {
+    flex: 1;
+    text-align: right;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header {
+            border: 2px solid red;
+            margin: auto;
+            width: auto;
+            height:auto;
+        }
+
+        .container{
+            margin: auto;
+            /* width: 1200px; */
+        }
+        .box {
+            /* border: 4px solid black; */
+            /* background-color: grey; */
+            /* margin: 4px 0px; */
+            /* padding: 23px; */
+            width: 50%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="left">
+        
+        <div class="form-container">
+            <div class="form-text">
+                <label for="name">Forms/<b>Job Application</label>
+            </div>
+            
+            <div class="form-button">
+                <button type="submit">Create Form</button>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container">
+        <div class="box">
+            <div class="form-text">
+                <label for="name"><b>Form Name</b>(Internal only)</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-text">
+                <label for="name"><b>Layout</b></label><br>
+                <button type="submit">One Column</button>
+                <button type="submit">Two Column</button>
+                <button type="submit">Inline</button>
+            </div>
+            <div class="form-text">
+                <label for="name"><b>Form Fields</b>nly)</label><br>
+                <input type="text" id="name" name="name">
+            </div>
      
+        </div>
+        <div class="box">
+            
+            
+        </div>
+    </div>
+</body>
+
+</html>
