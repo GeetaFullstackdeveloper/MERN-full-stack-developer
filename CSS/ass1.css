@@ -1,46 +1,69 @@
-.flex-container {
+.form-container {
     display: flex;
-    align-items: strech;
-    width: 100%;
+    align-items: center;
+    width: auto;
     height: auto;
-    background-color: #9da1a3;
-    }
-    .flex-container1 {
-        display: flex;
-        align-items: stretch;
-        width: 100%;
-        height: auto;
-        background-color: #e0e7ea;
+   }
+   .form-box {
+            border:0vw;
+            width: 95%;
+            box-sizing: border-box;
+            display: inline-block;
         }
-    .right {
-    display: inline-block;
-    width: 50%;
-    height: auto;
-    margin: 5px;
-    background-color: #4a4d46;
-    }
-    .left {
-        display: inline-block;
-        width: 50%;
-        height: auto;
-        margin: 5px;
-        background-color: #edefea;
-        }
-        button {
-        float: right;
-    }
-    .navbar li {
-        display: inline-block;
-        font-size: 25px;
-    }
-    #outer
-{
+
+.form-text {
+    flex: 1;
+}
+
+.form-button {
+    flex: 1;
+    text-align: right;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-button {
+    
+    text-align: center;
     width:100%;
-    text-align: left;
+
 }
-.inner
-{
-    display:flex;
-    flex-direction: row;
-    position :absolute;
-}
+header {
+            border: 2px solid red;
+            margin: auto;
+            width: auto;
+            height:auto;
+        }
+
+        .container{
+            margin: auto;
+            /* width: 1200px; */
+            display:flex;
+        }
+        .box {
+            border:0vw;
+            width: 95%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        .table-container {
+            width: 100%;
+            background-color: #f9f9f9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }

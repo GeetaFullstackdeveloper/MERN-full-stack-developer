@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Display property</title>
+    <!-- <link rel="stylesheet" href ="D:\FUll STACK\MERN-full-stack-developer\CSS\ass1.css"> -->
     <style> 
 
     .form-container {
@@ -14,6 +15,12 @@
     width: auto;
     height: auto;
    }
+   .form-box {
+            border:0vw;
+            width: 95%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
 
 .form-text {
     flex: 1;
@@ -32,7 +39,12 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+.submit-button {
+    
+    text-align: center;
+    width:100%;
 
+}
 header {
             border: 2px solid red;
             margin: auto;
@@ -43,16 +55,31 @@ header {
         .container{
             margin: auto;
             /* width: 1200px; */
+            display:flex;
         }
         .box {
-            /* border: 4px solid black; */
-            /* background-color: grey; */
-            /* margin: 4px 0px; */
-            /* padding: 23px; */
-            width: 50%;
+            border:0vw;
+            width: 95%;
             box-sizing: border-box;
             display: inline-block;
         }
+        .table-container {
+            width: 100%;
+            background-color: #f9f9f9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        
     </style>
 </head>
 
@@ -87,12 +114,143 @@ header {
                 <input type="text" id="name" name="name">
             </div>
      
+       
+        <div class="box">
+            <div class="table-container">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>TEXT</td>
+                        <td>First Name</Fieldset></td>
+                        <td>Optinal</td>
+                    </tr>
+                    <tr>
+                        <td>TEXT</td>
+                        <td>Last Name</Fieldset></td>
+                        <td>Optinal</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Email</Fieldset></td>
+                        <td>Required</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Email</Fieldset></td>
+                        <td>Required</td>
+                    </tr>
+                    <tr>
+                        <td>SELECT</td>
+                        <td>How did you hear about us?</td>
+                        <td>Optional</td>
+                    </tr>
+                    <tr>
+                        <td>SELECT</td>
+                        <td>Position</td>
+                        <td>Optional</td>
+                    </tr>
+                    <tr>
+                        <td>Radio</td>
+                        <td>Would you consider a remote position</td>
+                        <td>Optional</td>
+                    </tr>
+                    <tr>
+                        <td>URL</td>
+                        <td>LinkedIn</td>
+                        <td>Optional</td>
+                    </tr>
+                    <tr>
+                        <td>FILE</td>
+                        <td>Upload your resume</td>
+                        <td>Optional<button type="submit">Edit Fields</button></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>     
         </div>
         <div class="box">
-            
-            
+            <form id="userInfoForm" style="display: inline;" >
+                <div class="form-text">
+                    <label for="name"><h4>Form Preview</h4h4></label>
+                </div>
+                <!-- <div class="form-container"> -->
+               <div class="form-text">
+                <p class="justified-text" style="background-color:rgba(71, 172, 255, 0.123);">
+                    This is a preview of your content. The excat design dependends on your site settings 
+                    and can be changed insite the site editor once you add this form to a site</p><br>
+                    <!-- <textarea name="message" style="background-color:rgba(71, 172, 255, 0.123);" class ='justified-text'>
+                        This is a preview of your content. The excat design dependends on your site settings 
+                    and can be changed insite the site editor once you add this form to a site
+                        </textarea> -->
+                </div>  
+                <div class="form-container">      
+                    <div class="form-box">
+                        <label for="name">First Name</label><br>
+                        <input type="text" id="name" placeholder="Jane">
+                    </div>
+                    <div class="form-box">
+                        <label for="name">Last Name</label><br>
+                        <input type="text" id="name" placeholder="Doe">
+                    </div>
+                    </div>
+                    <div class="form-text">
+                        <label for="name"><b>Email*</b>(Internal only)</label><br>
+                        <input type="email" id="email">
+                    </div> 
+                    <div class="form-container" >
+                    <div class="form-box">
+
+                       <label for="name">How did you hear about us? </label><br>
+                       <select name="search" id="search">
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Twitter">Twitter</option>
+                        </select>
+                        
+                    </div>
+                    <div class="form-box">
+                        <label for="name">Position</label> <br>         
+                            <select name="search" id="search">
+                                <option value="Project Manager">Project Manager</option>
+                                <option value="Developer">Developer</option>
+                                <option value="Tester">Tester</option>
+                                </select>
+                   </div>
+                </div>
+                <br>
+                   <div class="form-text">            
+                    <label for="name"><b>Whould you consider a remote position? </b></label><br>
+                    <input type="radio" id="Yes" value="Yes">
+                    <label for="Yes">Yes</label><br>
+                    <input type="radio" id="No" value="No">
+                    <label for="No">No</label><br>
+                    </div>
+                    <br>
+                    <div class="form-text"
+                    <label for="name"><b>LinkedIn </b></label><br>
+                    <input type="text" id="linkedin" placeholder="https://www.linkedin.com/in/janedoe"><br>
+                     </div>
+                     <br>
+                     <div class="form-text">
+                    <label for="resume">Upload Your Resume</label><br>
+                    <button>Choose File</button><br>
+                    </div>
+                    <div class="submit-button">
+                    <button class="submit-button">Submit</button> 
+                    <!-- /*this is another button so specified with .submit-button*/ -->
+                    </div>
+                </div>
+        
+                 
+            </div>
+        </form>
         </div>
+
+
     </div>
 </body>
 
 </html>
+
