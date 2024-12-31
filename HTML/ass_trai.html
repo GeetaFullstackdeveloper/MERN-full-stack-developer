@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Display property</title>
+    <!-- <link rel="stylesheet" href ="D:\FUll STACK\MERN-full-stack-developer\CSS\ass1.css"> -->
+    <style> 
+    .form-container {
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+    .form-box {
+        border: 0vw;
+        width: 95%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    .form-text {
+        flex: 1;
+        font-weight: normal; /* Ensure no bold text here */
+    }
+
+    .form-button {
+        flex: 1;
+        text-align: right;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .submit-button {
+        text-align: center;
+        background-color: gray;
+        text-emphasis-color: black;
+        width: 100%;
+    }
+
+    header {
+        border: 2px solid red;
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .container {
+        margin: auto;
+        /* width: 1200px; */
+        display: flex;
+    }
+
+    .box {
+        border: 0vw;
+        width: 95%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    .table-container {
+        width: 100%;
+        background-color: #f9f9f9;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 8px 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    #name {
+            width: 90%; /* The input will take 100% width of its parent */
+            padding: 8px; /* Optional: add some padding for aesthetics */
+            box-sizing: border-box; /* Ensures padding doesn't overflow the width */
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="left">
+        <div class="form-container">
+            <div class="form-text">
+                <label for="name">Forms/Job Application</label>
+            </div>
+            
+            <div class="form-button">
+                <button type="submit">Create Form</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <div class="form-text">
+                <label for="name"><b>Form Name</b> (Internal only)</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-text">
+                <label for="name"><b>Layout</b></label><br>
+                <button type="submit">One Column</button>
+                <button type="submit">Two Column</button>
+                <button type="submit">Inline</button>
+            </div>
+            <div class="form-text">
+                <label for="name"><b>Form Fields</b> (Internal only)</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+        
+
+        <div class="box">
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>TEXT</td>
+                            <td>First Name</td>
+                            <td>Optional</td>
+                        </tr>
+                        <tr>
+                            <td>TEXT</td>
+                            <td>Last Name</td>
+                            <td>Optional</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>Email</td>
+                            <td>Required</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>Email</td>
+                            <td>Required</td>
+                        </tr>
+                        <tr>
+                            <td>SELECT</td>
+                            <td>How did you hear about us?</td>
+                            <td>Optional</td>
+                        </tr>
+                        <tr>
+                            <td>SELECT</td>
+                            <td>Position</td>
+                            <td>Optional</td>
+                        </tr>
+                        <tr>
+                            <td>Radio</td>
+                            <td>Would you consider a remote position</td>
+                            <td>Optional</td>
+                        </tr>
+                        <tr>
+                            <td>URL</td>
+                            <td>LinkedIn</td>
+                            <td>Optional</td>
+                        </tr>
+                        <tr>
+                            <td>FILE</td>
+                            <td>Upload your resume</td>
+                            <td>Optional <button type="submit">Edit Fields</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+        </div> 
+           
+
+        <div class="box">
+            <form id="userInfoForm" style="display: inline;">
+                <div class="form-text">
+                    <label for="name"><h4>Form Preview</h4></label>
+                </div>
+
+                <div class="form-text">
+                    <p class="justified-text" style="background-color:rgba(71, 172, 255, 0.123);">
+                        This is a preview of your content. The exact design depends on your site settings 
+                        and can be changed inside the site editor once you add this form to a site
+                    </p><br>
+                </div>  
+
+                <div class="form-container">      
+                    <div class="form-box">
+                        <label for="name">First Name</label><br>
+                        <input type="text" id="name" placeholder="Jane">
+                    </div>
+                    <div class="form-box">
+                        <label for="name">Last Name</label><br>
+                        <input type="text" id="name" placeholder="Doe">
+                    </div>
+                </div>
+
+                <div class="form-text">
+                    <label for="name"><b>Email*</b> (Internal only)</label><br>
+                    <input type="email" id="email">
+                </div> 
+
+                <div class="form-container">
+                    <div class="form-box">
+                        <label for="name">How did you hear about us?</label><br>
+                        <select name="search" id="search">
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Twitter">Twitter</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                        <label for="name">Position</label><br>         
+                        <select name="search" id="search">
+                            <option value="Project Manager">Project Manager</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Tester">Tester</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br>
+                <div class="form-text">
+                    <label for="name"><b>Would you consider a remote position?</b></label><br>
+                    <input type="radio" id="Yes" value="Yes">
+                    <label for="Yes">Yes</label><br>
+                    <input type="radio" id="No" value="No">
+                    <label for="No">No</label><br>
+                </div>
+                <br>
+
+                <div class="form-text">
+                    <label for="name"><b>LinkedIn</b></label><br>
+                    <input type="text" id="linkedin" placeholder="https://www.linkedin.com/in/janedoe"><br>
+                </div>
+                <br>
+
+                <div class="form-text">
+                    <label for="resume">Upload Your Resume</label><br>
+                    <button>Choose File</button><br>
+                </div>
+
+                <div class="submit-button">
+                    <button class="submit-button">Submit</button> 
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
