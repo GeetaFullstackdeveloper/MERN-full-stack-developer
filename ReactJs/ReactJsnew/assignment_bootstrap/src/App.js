@@ -5,9 +5,9 @@ function App() {
     <div>
       <h1>Hello</h1>
       <ContactUs />
+      </div>
       
-    </div>
   );
-}
+};
 
 export default App;
