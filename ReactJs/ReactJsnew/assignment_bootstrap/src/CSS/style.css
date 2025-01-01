@@ -1,5 +1,50 @@
-.button{
-    background: #EF6F22;
+/* Add a box-like container around the navbar */
+.header-box {
+    display: flex;
+    background-color: #333; /* Dark background for the header */
+    padding: 15px 0; /* Space inside the box */
+    margin-bottom: 20px; /* Space below the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect for the box */
+    border-radius: 10px; /* Optional rounded corners */
+    width: 100%;
+  }
+  
+  /* Custom Button Styling */
+  .rbutton {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
     border: none;
-    border-radius: 29px;
+  }
+  
+  /* Custom image size adjustment for the right arrow image */
+  .img-arrow {
+    height: 30px; /* Adjust the size of the arrow image */
+    margin-left: 10px; /* Space between image and other elements */
+  }
+  
+  /* Ensuring the navbar looks good on smaller screens */
+  @media (max-width: 991px) {
+    .rbutton {
+      display: none; /* Hide button on smaller screens */
+    }
+  }
+  
+  
+.nav-bar{
+    margin-left: 18%;
+}
+
+.nav-link{
+    text-decoration: none !important; /* Remove underline */
+    color: #1B2F57;
+    /* font-size: 18px;
+    font-weight: 500; */
+    /* margin: 12px; */
+    margin-left: 20px; /* Add space between each link */
+    margin-right: 20px; 
+}
+
+.img-arrow{
+    width: 5%;
 }

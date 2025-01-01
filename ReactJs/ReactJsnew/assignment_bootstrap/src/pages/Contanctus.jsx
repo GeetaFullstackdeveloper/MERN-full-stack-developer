@@ -1,11 +1,10 @@
-import MainNavbar from "../components/mainnavbar"
+import MainNav from "../components/MainNav"
 
 const ContactUs = () =>{
 return(
 <div>
-    <MainNavbar />
-    <h1> Contact Us Page</h1>
-</div>
+    <MainNav />
+    </div>
 
 )
 
