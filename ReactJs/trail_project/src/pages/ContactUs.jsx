@@ -1,4 +1,3 @@
-import Navbar from "../Components/Navbar";
 import logo from "./../images/footer-img.png";
 import locationIcon from "./../images/Location-icon.png";
 import emailIcon from "./../images/email-icon.png";
@@ -8,6 +7,8 @@ import twiterIcon from "./../images/footer-twiter.png";
 import instagramIcon from "./../images/footer-instagram.png";
 import bgheroimg from "./../images/hero-img-contactus.png";
 import MainNavBar from "../Components/Navbar";
+import footerimage from "./../images/footer-img.png"
+
 const ContactUs = () => {
   return (
     <div>
@@ -15,55 +16,64 @@ const ContactUs = () => {
         <MainNavBar />
       </div>
       <div className="hero-img-div">
-        {/* <img src={bgheroimg} className="hero-img" /> */}
-        {/* <div className="hero-im-text-div">
-          <h1 className="text-white"><b> Contact Us </b></h1>
-        </div> */}
-        <h1 className="hero-im-text-div">ssssss</h1>
-        <h1 className="hero-im-text-div">ssssss</h1>
-        <h1 className="hero-im-text-div">ssssss</h1>
-        <h1 className="hero-im-text-div">ssssss</h1>
-        <h1 className="hero-im-text-div">ssssss</h1>
+        <img src={bgheroimg} className="hero-img" alt="Hero Background" />
+        <div className="hero-im-text-div">
+          <h1 className="text-white"><b>Contact Us</b></h1>
+        </div>
       </div>
 
-      
+      {/* Form part */}
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <span>Get in Touch</span>
+            <h3>Hello</h3>
+          </div>
+        </div>
 
+        <div className="row">
+          {/* Add your form or other content here */}
+        </div>
+      </div>
+      <div style={{ margin: 0, padding: 0 }}>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4686.7554608241!2d74.22187720000001!3d17.3194702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc17f03509738b1%3A0x576f02648d3bb018!2sHari%20Om%20Innovations!5e1!3m2!1sen!2sin!4v1735697210880!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=... (Your map embed code)"
         style={{
           border: 0,
           width: "100%",
           height: "500px",
+          margin: 0,
+          padding: 0,
+          
         }}
-        allowfullscreen=""
+        allowFullScreen
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-
+      </div>
       <footer>
         <div className="container">
           {/* 12 Col in one row */}
           <div className="row py-5">
             <div className="col-md-4">
-              <img src={logo} />
+              <img src={footerimage} alt="Company Logo" />
+              {/* BOOTSTRAP CLASS */}
               <p className="my-3">
                 Innovation is the driving force behind progress, transforming
                 ideas into impactful solutions that address modern challenges.
-                Innovation is the driving force behind progress, transforming
-                ideas into impactful solutions that address.
               </p>
-
               <ul>
                 <li>
-                  <img src={locationIcon} className="footer-icons" /> Karad
+                  <img src={locationIcon} className="footer-icons" alt="Location Icon" />
+                  Karad
                 </li>
                 <li>
-                  <img src={emailIcon} className="footer-icons" />
+                  <img src={emailIcon} className="footer-icons" alt="Email Icon" />
                   supporthariom@gmail.com
                 </li>
                 <li>
-                  <img src={callIcon} className="footer-icons" />
-                  (02164) 214444 
+                  <img src={callIcon} className="footer-icons" alt="Call Icon" />
+                  (02164) 214444
                 </li>
               </ul>
             </div>
@@ -88,21 +98,20 @@ const ContactUs = () => {
             <div className="col-md-3">
               <h5>Services</h5>
               <ul>
-                <li> Al Enabled Application </li>
-                <li>ERP Consulting and</li>
-                <li>Development</li>
+                <li>AI Enabled Application</li>
+                <li>ERP Consulting and Development</li>
                 <li>Frontend Development</li>
                 <li>Web Development</li>
                 <li>Microsoft Technologies</li>
                 <li>Mobile Development</li>
-                <li>Data Visualizaton</li>
-                <li>Devops Development</li>
+                <li>Data Visualization</li>
+                <li>DevOps Development</li>
                 <li>Enterprise Portals</li>
                 <li>Dedicated Development Team</li>
               </ul>
             </div>
             <div className="col-md-2">
-              <h5>Technology </h5>
+              <h5>Technology</h5>
               <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -120,12 +129,12 @@ const ContactUs = () => {
           </div>
           <hr />
           <div className="pb-3 copy-right-div">
-            <span className="">Copyright: © 2024 By Hariom Innovations</span>
+            <span>Copyright: © 2024 By Hariom Innovations</span>
 
             <div>
-              <img src={facebookIcon} className="social-icon-footer" />
-              <img src={twiterIcon} className="social-icon-footer" />
-              <img src={instagramIcon} className="social-icon-footer" />
+              <img src={facebookIcon} className="social-icon-footer" alt="Facebook Icon" />
+              <img src={twiterIcon} className="social-icon-footer" alt="Twitter Icon" />
+              <img src={instagramIcon} className="social-icon-footer" alt="Instagram Icon" />
             </div>
           </div>
         </div>
