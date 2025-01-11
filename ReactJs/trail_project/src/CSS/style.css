@@ -4,8 +4,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   margin: 0;
-  padding: 0;
-
+  padding: 0 !important;
 }
 ul {
   list-style: none;
@@ -56,14 +55,21 @@ ul {
   height: 500px;
 }
 /* hero img css end */
-
+/*iframe css*/
+iframe {
+  border: 0 !important;
+  width: 100% !important;
+  height: 500px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 /* footer CSS start */
 
 footer {
   background: #1b2f57;
   color: white;
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 footer ul li{

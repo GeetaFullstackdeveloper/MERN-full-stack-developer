@@ -1,0 +1,17 @@
+/* #sid #pid {
+    color: blue;
+  }
+  section.sclass p#pid.pclass {
+    color: green;
+  }
+   */
+   /* using important */
+   #sid {
+    color: red !important;
+  }
+  p {
+    color: green !important;
+  }
+  #pid {
+    color: red;
+  }

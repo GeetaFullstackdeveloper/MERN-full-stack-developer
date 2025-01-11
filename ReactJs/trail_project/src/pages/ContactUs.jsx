@@ -35,17 +35,16 @@ const ContactUs = () => {
           {/* Add your form or other content here */}
         </div>
       </div>
-      <div style={{ margin: 0, padding: 0 }}>
+      <div style={{ margin: 0, padding: 0}}>
       <iframe
         src="https://www.google.com/maps/embed?pb=... (Your map embed code)"
-        style={{
-          border: 0,
-          width: "100%",
-          height: "500px",
-          margin: 0,
-          padding: 0,
-          
-        }}
+        // style={{
+        //   border: 0,
+        //   width: "100%",
+        //   height: "500px",
+        //   margin: 0,
+        //   padding: 0,
+        //   }}
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
@@ -74,6 +73,9 @@ const ContactUs = () => {
                 <li>
                   <img src={callIcon} className="footer-icons" alt="Call Icon" />
                   (02164) 214444
+                </li>
+                <li>
+                  Recent Posts
                 </li>
               </ul>
             </div>
