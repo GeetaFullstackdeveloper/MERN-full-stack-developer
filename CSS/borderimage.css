@@ -1,0 +1,20 @@
+/* img
+{
+	margin-left:150px;
+	margin-top:50px;
+	border: 50px solid transparent;
+    border-image:url(./../Images/frame1.jpg) 15% 20% 14% 15%;
+	/* border-image:url(./../Images/frame1.jpg) 13% 17% 14% 15%; */
+/* }  */
+*/
+#myDIV 
+{ 
+	border: 15px solid transparent; 
+	border-image: url(images/border.jpg); 
+	border-image-slice: 30; 
+	border-image-repeat: round; 
+	border-image-outset:10px; 
+	height: 50px; 
+	padding: 15px; 
+	width: 200px; 
+} 
