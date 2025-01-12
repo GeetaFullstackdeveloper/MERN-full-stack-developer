@@ -1,0 +1,46 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Container for all items */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between the items */
+  }
+  
+  /* Each item consisting of an image and its description */
+  .item {
+    display: flex;
+    flex: 1 1 100%; /* Makes each item take up full width on smaller screens */
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Image styles */
+  .image {
+    max-width: 150px;
+    height: auto;
+    flex-shrink: 0; /* Prevent image from shrinking */
+  }
+  
+  /* Description styles */
+  .description {
+    flex: 1;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  
+  
+  

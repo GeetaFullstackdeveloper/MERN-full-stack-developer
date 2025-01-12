@@ -1,13 +1,16 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "./../images/footer-img.png";
 import locationIcon from "./../images/Location-icon.png";
 import emailIcon from "./../images/email-icon.png";
 import callIcon from "./../images/call-icon.png";
 import facebookIcon from "./../images/footer-facebook.png";
-import twiterIcon from "./../images/footer-twiter.png";
+import twitterIcon from "./../images/footer-twiter.png";
 import instagramIcon from "./../images/footer-instagram.png";
 import bgheroimg from "./../images/hero-img-contactus.png";
 import MainNavBar from "../Components/Navbar";
-import footerimage from "./../images/footer-img.png"
+import footerimage from "./../images/footer-img.png";
+import Button from "react-bootstrap/Button";
+import call from "./../images/call.png"
 
 const ContactUs = () => {
   return (
@@ -15,6 +18,8 @@ const ContactUs = () => {
       <div className="container">
         <MainNavBar />
       </div>
+      
+      {/* Hero Image Section */}
       <div className="hero-img-div">
         <img src={bgheroimg} className="hero-img" alt="Hero Background" />
         <div className="hero-im-text-div">
@@ -22,8 +27,8 @@ const ContactUs = () => {
         </div>
       </div>
 
-      {/* Form part */}
-      <div className="container">
+      {/* Form Part */}
+      <div className="container my-5">
         <div className="row">
           <div className="col-md-12 text-center">
             <span>Get in Touch</span>
@@ -32,52 +37,91 @@ const ContactUs = () => {
         </div>
 
         <div className="row">
-          {/* Add your form or other content here */}
+          <div className="col-md-8">
+            {/* Add your form or other content here */}
+            <form>
+              <div className="mb-3">
+                 <input type="text" id="name" placeholder="Name" />
+              </div>
+              <div className="mb-3">
+                <input type="email" id="email" placeholder="Email" />
+              </div>
+              <div className="mb-3">
+                <input type="phone" id="phone" placeholder="Phone" />
+              </div>
+              <div className="mb-3">
+                <textarea id="message" placeholder="Your message"></textarea>
+              </div>
+              <div className="d-flex">
+               <Button className="button">Submit</Button>
+              </div>
+              
+            </form>
+          </div>
+
+          {/* Contact Details (Icons and Text) */}
+          <div className="col-md-4">
+            <div className="row mb-3">
+              <div className="col-md-4">
+                <img src={call} className="footer-icons" alt="Location Icon" />
+              </div>
+              <div className="col-md-8">
+                <>Call Anytime</>
+                <>+ 91 23678 27867</>
+                  + 91 67678 92878</p>
+              </div>
+            </div>
+            <div className="row mb-3">
+              <div className="col-md-4">
+                <img src={emailIcon} className="footer-icons" alt="Email Icon" />
+              </div>
+              <div className="col-md-8">
+              Send Email
+
+             <p>connect@itfirms.com
+                hello@itfirms.com</p>
+              </div>
+            </div>
+            <div className="row mb-3">
+              <div className="col-md-4">
+                <img src={callIcon} className="footer-icons" alt="Call Icon" />
+              </div>
+              <div className="col-md-8">
+                <p>(Visit Us
+
+20 Island Park Road, 
+New Jearsy, New York, USA</p>
+              </div>
+              Follow us
+            </div>
+          </div>
         </div>
       </div>
-      <div style={{ margin: 0, padding: 0}}>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=... (Your map embed code)"
-        // style={{
-        //   border: 0,
-        //   width: "100%",
-        //   height: "500px",
-        //   margin: 0,
-        //   padding: 0,
-        //   }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
+
+      {/* Google Map Embed */}
+      <div style={{ margin: 0, padding: 0 }}>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=..."  // Use your map embed code here
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          style={{ width: '100%', height: '500px' }}
+        ></iframe>
       </div>
+
+      {/* Footer */}
       <footer>
-        <div className="container">
-          {/* 12 Col in one row */}
-          <div className="row py-5">
+        <div className="container py-5">
+          <div className="row">
             <div className="col-md-4">
-              <img src={footerimage} alt="Company Logo" />
-              {/* BOOTSTRAP CLASS */}
-              <p className="my-3 left-aligned-text">
-                {/* justified-text */}
-                Innovation is the driving force behind progress, transforming
-                ideas into impactful solutions that address modern challenges.
+              <img src={footerimage} alt="Company Logo" className="mb-3" />
+              <p>
+                Innovation is the driving force behind progress, transforming ideas into impactful solutions that address modern challenges.
               </p>
               <ul>
-                <li>
-                  <img src={locationIcon} className="footer-icons" alt="Location Icon" />
-                  Karad
-                </li>
-                <li>
-                  <img src={emailIcon} className="footer-icons" alt="Email Icon" />
-                  supporthariom@gmail.com
-                </li>
-                <li>
-                  <img src={callIcon} className="footer-icons" alt="Call Icon" />
-                  (02164) 214444
-                </li>
-                <li>
-                  Recent Posts
-                </li>
+                <li><img src={locationIcon} className="footer-icons" alt="Location Icon" /> Karad</li>
+                <li><img src={emailIcon} className="footer-icons" alt="Email Icon" /> supporthariom@gmail.com</li>
+                <li><img src={callIcon} className="footer-icons" alt="Call Icon" /> (02164) 214444</li>
               </ul>
             </div>
             <div className="col-md-3">
@@ -130,13 +174,13 @@ const ContactUs = () => {
               </ul>
             </div>
           </div>
+
           <hr />
           <div className="pb-3 copy-right-div">
             <span>Copyright: © 2024 By Hariom Innovations</span>
-
             <div>
               <img src={facebookIcon} className="social-icon-footer" alt="Facebook Icon" />
-              <img src={twiterIcon} className="social-icon-footer" alt="Twitter Icon" />
+              <img src={twitterIcon} className="social-icon-footer" alt="Twitter Icon" />
               <img src={instagramIcon} className="social-icon-footer" alt="Instagram Icon" />
             </div>
           </div>
