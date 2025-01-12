@@ -57,7 +57,8 @@ const ContactUs = () => {
             <div className="col-md-4">
               <img src={footerimage} alt="Company Logo" />
               {/* BOOTSTRAP CLASS */}
-              <p className="my-3">
+              <p className="my-3 left-aligned-text">
+                {/* justified-text */}
                 Innovation is the driving force behind progress, transforming
                 ideas into impactful solutions that address modern challenges.
               </p>
