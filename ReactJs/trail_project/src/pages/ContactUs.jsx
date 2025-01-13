@@ -11,6 +11,7 @@ import MainNavBar from "../Components/Navbar";
 import footerimage from "./../images/footer-img.png";
 import Button from "react-bootstrap/Button";
 import call from "./../images/call.png"
+// import emailIcon from "./../images/e"
 
 const ContactUs = () => {
   return (
@@ -31,8 +32,8 @@ const ContactUs = () => {
       <div className="container my-5">
         <div className="row">
           <div className="col-md-12 text-center">
-            <span>Get in Touch</span>
-            <h3>Hello</h3>
+            <span className='sub-title'> ---- Get in Touch</span>
+            <h3 className='tilte-section'>Hey!Let's Talk</h3>
           </div>
         </div>
 
@@ -40,21 +41,23 @@ const ContactUs = () => {
           <div className="col-md-8">
             {/* Add your form or other content here */}
             <form>
-              <div className="mb-3">
-                 <input type="text" id="name" placeholder="Name" />
+              <div>
+                 <input type="text" id="name" placeholder="Name" className='contantus-input-form' />
               </div>
-              <div className="mb-3">
-                <input type="email" id="email" placeholder="Email" />
+              
+              <div>
+                <input type="email" id="email" placeholder="Email" className='contantus-input-form'/>
               </div>
-              <div className="mb-3">
-                <input type="phone" id="phone" placeholder="Phone" />
+              <div>
+                <input type="phone" id="phone" placeholder="Phone" className='contantus-input-form'/>
               </div>
-              <div className="mb-3">
-                <textarea id="message" placeholder="Your message"></textarea>
-              </div>
-              <div className="d-flex">
-               <Button className="button">Submit</Button>
-              </div>
+              
+              
+                <textarea id="message" placeholder="Your message" className='contantus-input-form'></textarea>
+              
+              
+               <Button className="form-button">Submit</Button>
+              
               
             </form>
           </div>
@@ -66,8 +69,8 @@ const ContactUs = () => {
                 <img src={call} className="footer-icons" alt="Location Icon" />
               </div>
               <div className="col-md-8">
-                <>Call Anytime</>
-                <>+ 91 23678 27867</>
+                <p>Call Anytime
+                + 91 23678 27867
                   + 91 67678 92878</p>
               </div>
             </div>
@@ -87,10 +90,10 @@ const ContactUs = () => {
                 <img src={callIcon} className="footer-icons" alt="Call Icon" />
               </div>
               <div className="col-md-8">
-                <p>(Visit Us
+                <p>Visit Us
 
-20 Island Park Road, 
-New Jearsy, New York, USA</p>
+                      20 Island Park Road, 
+                      New Jearsy, New York, USA</p>
               </div>
               Follow us
             </div>

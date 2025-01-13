@@ -55,6 +55,35 @@ ul {
   height: 500px;
 }
 /* hero img css end */
+.sub-title{
+  color:#ef7f22;
+  font-weight: bold;
+}
+.tilte-setion{
+  color: #1b2f57;
+  font-weight: bold;
+}
+.form-button{
+  background: #ef7f22;
+  width: 120px;
+  border: none;
+  border-radius: 29px;
+}
+
+
+/* contact us css starts */
+.contantus-input-form{
+margin-bottom: 35px;
+margin-top: 11px;
+margin-left: 128px;
+border-radius: 35px;
+padding: 12%;
+width: 80%;
+background-color: #F7F7F7;
+border : none;
+
+}
+
 /*iframe css*/
 iframe {
   border: 0 !important;
