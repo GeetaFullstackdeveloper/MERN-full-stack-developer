@@ -48,13 +48,15 @@
 // export default App;
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ContactUs from "./pages/ContactUs";
+// import ContactUs from "./pages/ContactUs";
+import CarrerPage from "./pages/CarrerPage"
 import './CSS/style.css'
 
 function App() {
   return (
     <div >
-      <ContactUs />
+      {/* <ContactUs /> */}
+      <CarrerPage />
     </div>
   );
 }

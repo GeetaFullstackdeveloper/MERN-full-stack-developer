@@ -72,7 +72,7 @@ ul {
 
 
 /* contact us css starts */
-.contantus-input-form{
+/* .contact-form-input{
 margin-bottom: 35px;
 margin-top: 11px;
 margin-left: 128px;
@@ -81,8 +81,18 @@ padding: 12%;
 width: 80%;
 background-color: #F7F7F7;
 border : none;
-
+} */
+.contact-form-input{
+  margin-bottom: 35px;
+  margin-left: 128px;
+  margin-top: 11px;
+  background: #F7F7F7;
+  border: none;
+  padding: 12px;
+  width: 52%;
+  border-radius: 11px;
 }
+
 
 /*iframe css*/
 iframe {
@@ -112,6 +122,15 @@ footer h5{
 }
 .footer-icons{
   margin-right: 10px;
+}
+.recentpstul{
+  list-style: disc;
+  padding: 0%;
+  margin-left: 10%;
+}
+.footer-conatiner{
+  background:#1B2F57;
+  color:white;
 }
 
 hr{
