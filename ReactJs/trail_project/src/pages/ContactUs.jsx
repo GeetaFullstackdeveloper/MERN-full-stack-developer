@@ -39,7 +39,7 @@ const ContactUs = () => {
             <br />
             <input type="email" placeholder="Email" className="contact-form-input" />
             <br />
-            <input type="mobile" placeholder="Mobile" className="contact-form-input" />
+            <input type="mobile" placeholder="obile" className="contact-form-input" />
             <br />
             <textarea placeholder="Your Message" className="contact-form-input"></textarea>
           </div>
@@ -93,9 +93,8 @@ const ContactUs = () => {
       </div>
 
       {/* Footer */}
-      <div className='footer-container'>
+      
         <Mainfooter />
-      </div>
     </div>
   );
 };

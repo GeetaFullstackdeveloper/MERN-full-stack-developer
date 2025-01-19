@@ -49,14 +49,16 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import ContactUs from "./pages/ContactUs";
-import CarrerPage from "./pages/CarrerPage"
+// import CarrerPage from "./pages/CarrerPage"
 import './CSS/style.css'
+import CareerDetails from './pages/CareerDetails';
 
 function App() {
   return (
     <div >
       {/* <ContactUs /> */}
-      <CarrerPage />
+      {/* <CarrerPage /> */}
+      <CareerDetails />
     </div>
   );
 }

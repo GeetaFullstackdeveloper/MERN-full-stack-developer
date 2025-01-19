@@ -11,7 +11,8 @@ import footerimage from "./../images/footer-img.png";
 
 const Mainfooter = () => {
   return (
-   <div className="container py-5">
+   <div>
+    <footer>
              <div className="row">
                <div className="col-md-4">
                  <img src={footerimage} alt="Company Logo" className="mb-3" />
@@ -93,6 +94,8 @@ const Mainfooter = () => {
                  <img src={instagramIcon} className="social-icon-footer" alt="Instagram Icon" />
                </div>
              </div>
+             
+</footer>
            </div>
   )
 }
