@@ -1,4 +1,3 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import bgheroimg from "./../images/hero-img-contactus.png";
 import MainNavBar from "../Components/Navbar";
@@ -90,105 +89,100 @@ const CarrerPage = () => {
 family. Check out our open roles below and fill out an application.</p>
 </div>
            </div>
-           <div className='container'>
-
-
            <div className="row">
-              {/* Third Image and Text */}
-              <div className="col-md-4 text-left">
-                <ul>
-                    <li>HT & Admin</li>
-                    <li>Engineering</li>
-                    <li>Support</li>
-                    <li>Design</li>
-                    <li>Digital Marketing</li>
-                </ul>
-              </div>
+  {/* Left Column: Career Categories */}
+  <div className="col-md-4 text-left">
+    <ul>
+      <li>HT &amp; Admin</li>
+      <li>Engineering</li>
+      <li>Support</li>
+      <li>Design</li>
+      <li>Digital Marketing</li>
+    </ul>
+  </div>
 
-              {/* Fourth Image and Text */}
-              <div className="col-md-8 text-center">
-                <div className='row-box'>
-              <div className="box-container">
-        <div>
-            <h3>WordPress Developer</h3>
-            
-        </div>
-        <div className="col-md-4">
-            <p className='p-career'>Experience</p>
-            <h3>2 Years</h3>
-        </div>
-        <div className="col-md-4">
-            <p className='p-career'>Deadline</p>
-            <h3>2021-05-08</h3>
-        </div>
-        </div>
-        <div className="row-box">
-        <div className="box-container">
-        <div className="col-md-4">
-            <h3>Javascript</h3>
-            
-        </div>
-        <div className="col-md-4">
-            <p className='p-career'>Experience</p>
-            <h3>1 Years</h3>
-        </div>
-        <div className="col-md-4">
-            <p className='p-career'>Deadline</p>
-            <h3>2021-05-08</h3>
-        </div>
-        </div>
-        </div>
-        <div className='row-box'>
-        <div className="box-container">
-        <div className="col-md-4">
-            <h3>Apps Developer</h3>
-            
-        </div>
-        <div className="col-md-4">
-            <p className='p-career'>Experience</p>
-            <h3>2 Years</h3>
-        </div>
-        <div className="col-md-4">
-            <p className='p-career'>Deadline</p>
-            <h3>2021-05-08</h3>
-        </div>
-        </div>
-        </div>
-        <div className='row-box'>
-        <div className="box-container">
-        <div className="col-md-4">
-            <h3>IOS Developer</h3>
-            
-        </div>
-        <div className="col-md-4">
-            <p className='p-career'>Experience</p>
-            <h3>2 Years</h3>
-        </div>
-        <div className="col-md-4"></div>
-        
-        </div>
-        </div>
-        <div className='row-box'>
-        <div className="box-container">
-        <div className='col-md-4'>
-            <h3>Node Js Developer</h3>
-            
-        </div>
-        <div className="col-md-4">
-            <p className='p-career'>Experience</p>
-            <h3>3 Years</h3>
-        </div>
-        <div className="col-md-4"></div>
-        </div>
-        </div>
-                
-        </div>
-        </div>
-        
-        </div>
-        </div>
+  {/* Right Column: Job Boxes */}
+  <div className="col-md-8">
+    {/* Job Box Row - WordPress Developer */}
+    <div className="row job-box">
+      <div className="col-md-4">
+        <h3>WordPress Developer</h3>
       </div>
+      <div className="col-md-4">
+        <p className="p-career">Experience</p>
+        <h3>2 Years</h3>
       </div>
+      <div className="col-md-4">
+        <p className="p-career">Deadline</p>
+        <h3>2021-05-08</h3>
+      </div>
+    </div>
+
+    {/* Job Box Row - Javascript Developer */}
+    <div className="row job-box">
+      <div className="col-md-4">
+        <h3>Javascript Developer</h3>
+      </div>
+      <div className="col-md-4">
+        <p className="p-career">Experience</p>
+        <h3>1 Year</h3>
+      </div>
+      <div className="col-md-4">
+        <p className="p-career">Deadline</p>
+        <h3>2021-05-08</h3>
+      </div>
+    </div>
+
+    {/* Job Box Row - Apps Developer */}
+    <div className="row job-box">
+      <div className="col-md-4">
+        <h3>Apps Developer</h3>
+      </div>
+      <div className="col-md-4">
+        <p className="p-career">Experience</p>
+        <h3>2 Years</h3>
+      </div>
+      <div className="col-md-4">
+        <p className="p-career">Deadline</p>
+        <h3>2021-05-08</h3>
+      </div>
+    </div>
+
+    {/* Job Box Row - IOS Developer */}
+    <div className="row job-box">
+      <div className="col-md-4">
+        <h3>IOS Developer</h3>
+      </div>
+      <div className="col-md-4">
+        <p className="p-career">Experience</p>
+        <h3>2 Years</h3>
+      </div>
+      <div className="col-md-4">
+        <p className="p-career">Deadline</p>
+        <h3>2021-05-08</h3>
+      </div>
+    </div>
+
+    {/* Job Box Row - Node Js Developer */}
+    <div className="row job-box">
+      <div className="col-md-4">
+        <h3>Node Js Developer</h3>
+      </div>
+      <div className="col-md-4">
+        <p className="p-career">Experience</p>
+        <h3>3 Years</h3>
+      </div>
+      <div className="col-md-4">
+        <p className="p-career">Deadline</p>
+        <h3>2021-05-08</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+	  </div>
 
       {/* Footer Section */}
       <Mainfooter />
@@ -197,3 +191,4 @@ family. Check out our open roles below and fill out an application.</p>
 };
 
 export default CarrerPage;
+
