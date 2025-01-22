@@ -186,7 +186,7 @@ hr{
 /* Ensure each job box (row) is aligned horizontally */
 .job-box {
   margin-bottom: 20px;  /* Add space between each box */
-  border: 1px solid #ccc; /* Optional border for visual clarity */
+  
   padding: 15px;  /* Padding inside the box */
   background-color: #f9f9f9;  /* Light background color */
 }
