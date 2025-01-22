@@ -48,17 +48,25 @@
 // export default App;
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import ContactUs from "./pages/ContactUs";
-// import CarrerPage from "./pages/CarrerPage"
+import ContactUs from "./pages/ContactUs";
+import CarrerPage from "./pages/CarrerPage"
 import './CSS/style.css'
-import CareerDetails from './pages/CareerDetails';
+// import CareerDetails from './pages/CareerDetails';
+// import {BrowserRouters, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div >
-      {/* <ContactUs /> */}
-      {/* <CarrerPage /> */}
-      <CareerDetails />
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/contactus' element={<ContactUs />}/>
+        <Route path='/carrerpage' element={<CarrerPage />}/>
+     
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

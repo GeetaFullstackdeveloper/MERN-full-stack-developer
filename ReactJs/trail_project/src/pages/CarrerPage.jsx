@@ -90,6 +90,9 @@ const CarrerPage = () => {
 family. Check out our open roles below and fill out an application.</p>
 </div>
            </div>
+           <div className='container'>
+
+
            <div className="row">
               {/* Third Image and Text */}
               <div className="col-md-4 text-left">
@@ -104,7 +107,7 @@ family. Check out our open roles below and fill out an application.</p>
 
               {/* Fourth Image and Text */}
               <div className="col-md-8 text-center">
-                <div className='row'>
+                <div className='row-box'>
               <div className="box-container">
         <div>
             <h3>WordPress Developer</h3>
@@ -119,7 +122,7 @@ family. Check out our open roles below and fill out an application.</p>
             <h3>2021-05-08</h3>
         </div>
         </div>
-        <div className="row">
+        <div className="row-box">
         <div className="box-container">
         <div className="col-md-4">
             <h3>Javascript</h3>
@@ -135,7 +138,7 @@ family. Check out our open roles below and fill out an application.</p>
         </div>
         </div>
         </div>
-        <div className='row'>
+        <div className='row-box'>
         <div className="box-container">
         <div className="col-md-4">
             <h3>Apps Developer</h3>
@@ -151,7 +154,7 @@ family. Check out our open roles below and fill out an application.</p>
         </div>
         </div>
         </div>
-        <div className='row'>
+        <div className='row-box'>
         <div className="box-container">
         <div className="col-md-4">
             <h3>IOS Developer</h3>
@@ -165,7 +168,7 @@ family. Check out our open roles below and fill out an application.</p>
         
         </div>
         </div>
-        <div className='row'>
+        <div className='row-box'>
         <div className="box-container">
         <div className='col-md-4'>
             <h3>Node Js Developer</h3>
@@ -182,6 +185,7 @@ family. Check out our open roles below and fill out an application.</p>
         </div>
         </div>
         
+        </div>
         </div>
       </div>
       </div>

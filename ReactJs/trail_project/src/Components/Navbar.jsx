@@ -29,13 +29,11 @@
 
 import React from "react";
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "./../images/logohariom.png";
 import arrow from "./../images/arrow-contact-us.png";
+import { Link } from 'react-router-dom';
 
 const MainNavBar = () => {
   return (
@@ -51,15 +49,24 @@ const MainNavBar = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link className="nav-link">Home</Nav.Link>
-            <Nav.Link className="nav-link">About Us</Nav.Link>
-            <Nav.Link className="nav-link">Services</Nav.Link>
-            <Nav.Link className="nav-link">Careers</Nav.Link>
-            <Nav.Link className="nav-link">Case Studies</Nav.Link>
-            <Nav.Link className="nav-link">Testimonial</Nav.Link>
+            
+            <Nav.Link 
+            as={Link} to="/" className="nav-link">Home</Nav.Link>
+            <Nav.Link 
+             as={Link} to="/aboutus" className="nav-link">About Us</Nav.Link>
+            <Nav.Link 
+            as={Link} to="/Services" className="nav-link">Services</Nav.Link>
+            <Nav.Link 
+            as={Link} to="/carrerpage" className="nav-link">Careers</Nav.Link>
+            <Nav.Link 
+            as={Link} to="/casestudies" className="nav-link">Case Studies</Nav.Link>
+            <Nav.Link 
+            as={Link} to="/testimonial" className="nav-link">Testimonial</Nav.Link>
           </Nav>
           <div className="d-flex">
+          <Link to="/contactus">
             <Button className="button">Contact Us</Button>
+            </Link>
           </div>
           <img src={arrow} className="img-arrow"/>
 
