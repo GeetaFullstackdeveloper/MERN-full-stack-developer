@@ -55,6 +55,7 @@ import './CSS/style.css'
 // import {BrowserRouters, Routes, Route} from 'react-router-dom'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import CareerDetails from './pages/CareerDetails';
 
 function App() {
   return (
@@ -64,11 +65,12 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/contactus' element={<ContactUs />}/>
         <Route path='/carrerpage' element={<CarrerPage />}/>
-     
+        <Route path='/careerdetails' element={<CareerDetails />}/>
+        
       </Routes>
       </BrowserRouter>
+      
     </div>
   );
 }
-
 export default App;

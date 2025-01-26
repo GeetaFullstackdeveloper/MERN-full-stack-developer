@@ -61,7 +61,7 @@ const MainNavBar = () => {
             <Nav.Link 
             as={Link} to="/casestudies" className="nav-link">Case Studies</Nav.Link>
             <Nav.Link 
-            as={Link} to="/testimonial" className="nav-link">Testimonial</Nav.Link>
+            className="nav-link">Testimonial</Nav.Link>
           </Nav>
           <div className="d-flex">
           <Link to="/contactus">

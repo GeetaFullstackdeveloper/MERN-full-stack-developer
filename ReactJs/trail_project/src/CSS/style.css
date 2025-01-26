@@ -147,6 +147,14 @@ hr{
 /* footer CSS End */
 
 /* Career page */
+
+.container-career-page-first-section{
+  width: 70%;
+    padding: 10px;
+    margin-left: 150px;
+    margin-right: 200px;
+}
+
 .outer-box{
   
   background-color: #fff;
@@ -249,12 +257,19 @@ h3 {
 
 .job-listing {
   max-width: 1200px;
-  margin: 20px;
+  margin: 0px;
   padding: 20px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   text-align: left;
 }
 
+.job-listing-lower-box{
+  max-width: 1200px;
+  margin-left: 110px;
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  text-align: left;  
+}
 /* h1, h2 {
   color: #333;
   font-family: 'Arial', sans-serif;
@@ -272,11 +287,7 @@ section {
   margin-bottom: 40px;
 }
 
-/* Apply Now Button */
-.apply-now-btn {
-  text-align: center;
-  margin: 20px 0;
-}
+
 
 .apply-now-btn button {
   background-color: red; /* Red background */
@@ -315,4 +326,108 @@ section {
   border-radius: 8px; /* Slightly rounded corners */
   font-size: 16px;
    margin-top: 30px;
+}
+
+  /* Container for all items */
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between the items */
+  }
+  
+  /* Each item consisting of an image and its description */
+  .item {
+    display: flex;
+    flex: 1 1 100%; /* Makes each item take up full width on smaller screens */
+    gap: 10px;
+    align-items: left;
+    justify-content: space-between;
+  }
+  
+  /* Image styles */
+  .image {
+    max-width: 150px;
+    height: auto;
+    flex-shrink: 0; /* Prevent image from shrinking */
+  }
+  
+  /* Description styles */
+  .description {
+    flex: 1;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 0px;
+     text-align: left; 
+  }
+  /* Add some padding for the apply-now-btn container */
+
+/* Ensure that the images inside the form have the same size */
+.item img {
+  width: 40px; /* Uniform size */
+  height: 40px; /* Uniform size */
+  margin-right: 15px; /* Space between image and text */
+}
+
+/* Reduce font size for descriptions inside the form */
+.item .description h4 {
+  font-size: 14px;
+}
+
+/* Make the content in form-container spaced out nicely */
+/* Form container to ensure images and text align properly */
+.form-container .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Ensure uniform size for the images */
+.item img {
+  width: 30px; /* You can adjust this size */
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Reduced text size for the description */
+.item .description h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+/* Ensure that the Apply Now button is centered and has space around it */
+.apply-now-btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Additional styling to ensure consistent margins */
+h3, h4 {
+  margin-bottom: 15px;
+}
+
+/* line styling */
+.full-width-img-line {
+  width: 100%;
+  height: 3px;
+}
+/* div for sidebar bgcolour */
+.apply-now-content {
+  background-color: #CCE4F7; /* or your custom color */
+  padding: 15px; /* Adjust padding as needed */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.view-all-jobs {
+  margin-top: 20px;
+  text-align:left;
+}
+.text-color {
+  color: #F9F9F9;
+}
+.view-all-jobs-link{
+  color:black;
+  text-align: left;
 }
