@@ -431,3 +431,39 @@ h3, h4 {
   color:black;
   text-align: left;
 }
+/* product-age-css */
+
+/* Ensure the description section has padding and spacing */
+.item-product {
+  padding: 20px;
+  text-align: center; /* Center the text within each item */
+}
+
+.description-product {
+  padding-top: 10px;  /* Adds some space above the description text */
+}
+
+.image-product {
+  width: 80%;  /* Adjust the image width to make it smaller */
+  max-width: 200px;  /* Limit the maximum width */
+  margin-bottom: 10px;  /* Adds space below the image */
+}
+
+.item-product-last {
+  padding: 20px;
+  text-align: center; /* Center the text within each item */
+}
+
+.description-product-last {
+  text-align: left;  /* Adds some space above the description text */
+}
+
+.item-product-last-1 {
+  padding: 20px;
+  text-align: center;
+  flex-direction: row; /* Center the text within each item */
+}
+
+.description-product-last-1 {
+  text-align: left;  /* Adds some space above the description text */
+}

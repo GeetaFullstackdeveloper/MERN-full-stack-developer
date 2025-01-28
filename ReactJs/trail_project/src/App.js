@@ -56,6 +56,7 @@ import './CSS/style.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import CareerDetails from './pages/CareerDetails';
+import Productpage from './pages/Productpage';
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
         <Route path='/contactus' element={<ContactUs />}/>
         <Route path='/carrerpage' element={<CarrerPage />}/>
         <Route path='/careerdetails' element={<CareerDetails />}/>
+        <Route path='/services' element={<Productpage />}/>
         
       </Routes>
       </BrowserRouter>
