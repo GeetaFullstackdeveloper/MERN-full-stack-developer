@@ -77,9 +77,9 @@ const CarrerPage = () => {
           {/* Inner box content */}
           <div className="row text-center">
             <div className="col-md-12">
-            <Link to="/careerdetails">
-              <h6 className="text-uppercase">
-                Come join us</h6></Link>
+              <Link to="/careerdetails">
+                <h6 className="text-uppercase">Come join us</h6>
+              </Link>
               <h3>Career Openings</h3>
               <p>We’re always looking for creative, talented self-starters to join the JMC family. Check out our open roles below and fill out an application.</p>
             </div>
@@ -111,7 +111,66 @@ const CarrerPage = () => {
                   <h3>2021-05-08</h3>
                 </div>
               </div>
-              {/* Repeat for other job boxes */}
+
+              {/* Job Box Row - Javascript Developer */}
+              <div className="row job-box">
+                <div className="col-md-4">
+                  <h3>Javascript Developer</h3>
+                </div>
+                <div className="col-md-4">
+                  <p className="p-career">Experience</p>
+                  <h3>1 Year</h3>
+                </div>
+                <div className="col-md-4">
+                  <p className="p-career">Deadline</p>
+                  <h3>2021-05-08</h3>
+                </div>
+              </div>
+
+              {/* Job Box Row - Apps Developer */}
+              <div className="row job-box">
+                <div className="col-md-4">
+                  <h3>Apps Developer</h3>
+                </div>
+                <div className="col-md-4">
+                  <p className="p-career">Experience</p>
+                  <h3>2 Years</h3>
+                </div>
+                <div className="col-md-4">
+                  <p className="p-career">Deadline</p>
+                  <h3>2021-05-08</h3>
+                </div>
+              </div>
+
+              {/* Job Box Row - IOS Developer */}
+              <div className="row job-box">
+                <div className="col-md-4">
+                  <h3>IOS Developer</h3>
+                </div>
+                <div className="col-md-4">
+                  <p className="p-career">Experience</p>
+                  <h3>2 Years</h3>
+                </div>
+                <div className="col-md-4">
+                  <p className="p-career">Deadline</p>
+                  <h3>2021-05-08</h3>
+                </div>
+              </div>
+
+              {/* Job Box Row - Node Js Developer */}
+              <div className="row job-box">
+                <div className="col-md-4">
+                  <h3>Node Js Developer</h3>
+                </div>
+                <div className="col-md-4">
+                  <p className="p-career">Experience</p>
+                  <h3>3 Years</h3>
+                </div>
+                <div className="col-md-4">
+                  <p className="p-career">Deadline</p>
+                  <h3>2021-05-08</h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>
