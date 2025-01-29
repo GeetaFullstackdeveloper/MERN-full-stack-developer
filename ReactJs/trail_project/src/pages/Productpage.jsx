@@ -13,9 +13,19 @@ import lastimage from "./../images/product-page-footer.png";
 import readMore from "./../images/arrow-product-page.png";
 import frame from "./../images/Frame.png"
 import framelast from "./../images/Frame 39.png"
+import ProductList from '../Components/productlist';
 
 
 const Productpage = () => {
+    // props declaration
+    const products = [
+        {
+    
+          image: framelast, // Replace with actual image paths
+          description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+        }
+        ];
+    
   return (
     <div>
       <div className="container">
@@ -159,38 +169,21 @@ const Productpage = () => {
 <br />
 <br />
 {/* --------------------------last div-------------------------------- */}
+  
+   
 <div className="container">
   <div className="row">
     <div className='col-md-1 d-flex align-items-center justify-content-center'>
       
     </div>
+    {/* props implemted */}
     
-    <div className='col-md-10 d-flex flex-column align-items-center justify-content-between'>
-      <div className="item-product-last-1 ">
-      
-        <img src={framelast} alt="bullet" className="image" />
-        <div className="description-product-last-1">
-          
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-          
-        </div>
-      </div>
-      <div className="item-product-last-1">
-        <img src={framelast} alt="bullet" className="image" />
-        <div className="description-product-last-1">
-          
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-          
-        </div>
-        <div className="item-product-last-1">
-        <img src={framelast} alt="bullet" className="image" />
-        <div className="description-product-last-1">
-          
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-          
-        </div>
-      </div>
-      </div>
+    <div className='col-md-10 d-flex flex-row align-items-center justify-content-between'>
+    {/* <div className="container d-flex"> */}
+      <ProductList products={products} />
+      <ProductList products={products} />
+      <ProductList products={products} />
+    {/* </div> */}
     </div>
     <div className='col-md-1 d-flex align-items-center justify-content-center'>
       
