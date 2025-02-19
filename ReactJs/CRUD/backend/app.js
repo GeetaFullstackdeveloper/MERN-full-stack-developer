@@ -1,85 +1,82 @@
 // Import required packages
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
+const express = require("express"); // Express framework for Node.js
+const mongoose = require("mongoose"); // Mongoose for MongoDB object modeling
+const cors = require("cors"); // CORS to allow cross-origin requests
 
 // Initialize Express application
 const app = express();
 
 // Define the port number for running the server
-const PORT = 8080;
+const PORT = 9090;
 
 // Middleware setup
-app.use(cors());
-app.use(express.json());
+app.use(cors()); // Enable CORS for cross-origin requests
+app.use(express.json()); // Enable parsing of JSON request bodies
 
 // Connect to MongoDB database
-mongoose.connect("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.9")
-    .then(() => {
-        console.log("MongoDB Connected");
+mongoose.connect("mongodb://127.0.0.1:27017/crud-db")
+    .then(() => console.log("MongoDB Connected")) // Success message if connection is successful
+    .catch((err) => console.log("MongoDB Connection Error:", err)); // Error message if connection fails
 
-        // List databases after successful connection
-        mongoose.connection.db.admin().listDatabases()
-            .then((databases) => {
-                console.log("Databases:");
-                databases.databases.forEach(db => {
-                    console.log(db.name); // Print each database name
-                });
-            })
-            .catch((err) => {
-                console.log("Error listing databases:", err);
-            });
-    })
-    .catch((err) => console.log("MongoDB Connection Error:", err));
-
-// Start server
+// Start the Express server
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log("Server is running on", PORT);
 });
 
 
-    // const { MongoClient } = require('mongodb');
 
-    // async function main() {
-    //     /**
-    //      * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
-    //      * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
-    //      */
-    //     const uri = "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.9";
-    
-    //     /**
-    //      * The Mongo Client you will use to interact with your database
-    //      * See https://mongodb.github.io/node-mongodb-native/3.6/api/MongoClient.html for more details
-    //      * In case: '[MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated...'
-    //      * pass option { useUnifiedTopology: true } to the MongoClient constructor.
-    //      * const client =  new MongoClient(uri, {useUnifiedTopology: true})
-    //      */
-    //     const client = new MongoClient(uri);
-    
-    //     try {
-    //         // Connect to the MongoDB cluster
-    //         await client.connect();
-    
-    //         // Make the appropriate DB calls
-    //         await listDatabases(client);
-    
-    //     } catch (e) {
-    //         console.error(e);
-    //     } finally {
-    //         // Close the connection to the MongoDB cluster
-    //         await client.close();
-    //     }
-    // }
-    
-    // main().catch(console.error);
-    
-    // /**
-    //  * Print the names of all available databases
-    //  * @param {MongoClient} client A MongoClient that is connected to a cluster
-    //  */
-    // async function listDatabases(client) {
-    //     databasesList = await client.db().admin().listDatabases();
-    
-    //     console.log("Databases:");
-    //     databasesList.databases.forEach(db => console.log(` - ${db.name}`));
-    // };
+
+// Define the GET /crud-db route
+app.get('/crud-db', (req, res) => {
+    res.json({ message: 'This is the /crud-db route' });
+});
+// Define MongoDB schema and model for Users
+const UsersSchema = new mongoose.Schema({
+    name: String,  // User's name as a string
+    email: String, // User's email as a string
+    age: Number    // User's age as a number
+});
+
+// Create a User model based on the schema
+const User = mongoose.model("User", UsersSchema);
+
+// Create User API (POST request) - Adds a new user to the database
+app.post("/api/create-user", async (req, res) => { // Corrected missing forward slash in route
+    try {
+        // Extract user details from the request body
+        const { name, email, age } = req.body;
+
+        // Create a new User instance with provided data
+        const newUser = new User({
+            name,
+            email,
+            age
+        });
+
+        // Save the user to the database
+        await newUser.save();
+
+        // Send success response with the created user data
+        res.status(201).json({ message: "User added successfully", data: newUser });
+    } catch (error) {
+        // Handle any errors and send an error response
+        res.status(500).json({ message: "Internal Server Error", error });
+    }
+});
+
+// Define Book schema
+// const bookSchema = new mongoose.Schema({
+//   title: String,
+//   author: String,
+//   year: Number
+// });
+
+// // Create Book model
+// const Book = mongoose.model('Book', bookSchema);
+
+// // Start server
+// // app.listen(PORT, () => {
+// //     console.log(`Server is running on http://localhost:${PORT}`);
+// // });
+
+// module.exports = Book;  // Export Book model
